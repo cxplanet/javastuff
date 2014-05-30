@@ -23,8 +23,8 @@ public class Enclosure {
 
 	public static Enclosed createEnclosed()
 	{
-        return new Enclosed();
-    }
+        	return new Enclosed();
+    	}
 	
 	public static void instanceTest()
 	{
@@ -55,4 +55,10 @@ public class Enclosure {
 	{
 		instanceTest();
 		staticFieldTest();
+	}
+	
+	// static initalizer for the class. This is called before the constructor. 
+	static
+	{
+		theEnclosed = createEnclosed();
 	}
